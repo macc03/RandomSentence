@@ -1,0 +1,54 @@
+@charset "UTF-8";
+:root {
+  --theme: #99cccc
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--theme);
+}
+
+.sentence-box {
+  width: 450px;
+  padding: 40px 50px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.sentence-box > .sentence-text {
+  text-align: center;
+}
+
+.sentence-box > .sentence-text > .text {
+  font-size: 1.5625rem;
+  margin: .3125rem;
+  color: var(--theme)
+}
+
+.sentence-box > .sentence-text > svg {
+  fill: var(--theme);
+}
+
+.sentence-box .from {
+  text-align: right;
+  padding: 1.2rem 0
+}
+
+.sentence-actions button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--theme);
+  font-size: 16.5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sentence-actions {
+  display: flex;
+  justify-content: space-between;
+}
