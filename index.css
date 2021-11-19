@@ -2,6 +2,22 @@
 :root {
   --theme: #99cccc
 }
+ul {
+  list-style: none;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+ul li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: tomato;
+  margin: 0 6px;
+  transform: translateY(30px);
+}
 
 body {
   display: flex;
@@ -46,9 +62,31 @@ body {
   font-size: 16.5px;
   color: #fff;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.sentence-actions button.new-sentence:hover {
+  animation: shake .5s
+}
+
+@keyframes shake {
+  30% {
+    /* width: 118px; */
+    transform: scaleX(.9);
+  }
+  50% {
+    /* width: 122px; */
+    transform: scaleX(1.1);
+  }
+  100% {
+    /* width: 120px; */
+    transform: scaleX(1);
+  }
 }
 
 .sentence-actions {
   display: flex;
   justify-content: space-between;
 }
+
+
