@@ -25,6 +25,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: var(--theme);
+  transition: 1s;
 }
 
 .sentence-box {
@@ -50,7 +51,8 @@ body {
 
 .sentence-box .from {
   text-align: right;
-  padding: 1.2rem 0
+  padding: 1.2rem 0;
+  color: var(--theme)
 }
 
 .sentence-actions button {
@@ -63,6 +65,7 @@ body {
   color: #fff;
   cursor: pointer;
   overflow: hidden;
+  
 }
 
 .sentence-actions button.new-sentence:hover {
@@ -87,6 +90,17 @@ body {
 .sentence-actions {
   display: flex;
   justify-content: space-between;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 6px;
+  background: #4a89dc;
+  transform: translate(-50%,-50%);
+  transition: .6s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 
 
