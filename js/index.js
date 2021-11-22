@@ -1,4 +1,4 @@
-import toast from "./toast.js";
+import toast from "../util/toast.js";
 
 const sentence_text = document.querySelector('.sentence-box>.sentence-text span'),
   sentence_author = document.querySelector('.sentence-box>.from span>i'),
@@ -12,7 +12,7 @@ const SENTENCE_API = 'https://v1.hitokoto.cn/',
       '#CCFF99',
       '#FFCCCC',
       '#FFCC99',
-      '#99CCzCC',
+      '#99CCCC',
       '#99CC66',
       '#666699',
       '#0066CC'
