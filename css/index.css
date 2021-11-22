@@ -4,19 +4,21 @@
 }
 ul {
   list-style: none;
-  width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
   padding: 10px;
+  /* transform: translateY(100%); */
 }
 ul li {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: scale(1.2);
   margin: 0 6px;
-  transform: translateY(30px);
+  /* transform: translateY(30px); */
 }
 
 body {
@@ -69,8 +71,29 @@ body {
   color: #fff;
   cursor: pointer;
   overflow: hidden;
-  
+  outline: none;
 }
+
+.sentence-actions button:first-child {
+  cursor: inherit;
+}
+
+button.share>div {
+  height: inherit;
+  transition: .2s transform ease-in;
+}
+
+button.share>div:hover {
+  z-index: 5;
+  background-color: var(--theme);
+  transform: scaleX(1.6);
+  transform: translateY(-45px);
+}
+
+.sentence-actions button span {
+  line-height: 50px;
+}
+
 
 .sentence-actions button.new-sentence:hover {
   animation: shake .5s

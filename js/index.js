@@ -3,6 +3,7 @@ import toast from "../util/toast.js";
 const sentence_text = document.querySelector('.sentence-box>.sentence-text span'),
   sentence_author = document.querySelector('.sentence-box>.from span>i'),
   newSentenceBtn = document.querySelector('button.new-sentence'),
+  shareBtn = document.querySelectorAll('button.share svg'),
   loadDiv = document.querySelector('.sentence-box .loading'),
   root = document.querySelector(':root')
 
@@ -48,6 +49,8 @@ newSentenceBtn.addEventListener('click', () => {
   })
 })
 
-
+shareBtn.forEach(item => item.addEventListener('click', () => {
+  toast.fail('这个功能还在施工中.....')
+}))
 
 newSentenceBtn.click()
